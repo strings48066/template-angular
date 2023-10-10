@@ -46,8 +46,3 @@
 1. **Terraform Plan and Apply**: After successful CI, GitHub Actions will trigger Terraform to provision or update the S3 bucket.
 2. **Deploy to S3**: The built Angular app will be uploaded to the S3 bucket.
    - Check `.github/workflows/cd.yml` for the CD setup.
-
-## Contributing
-
-Feel free to submit PRs or issues for improvements and bug fixes.
-# template-angular
