@@ -6,14 +6,15 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Install Node.js
+    - name: Install Latest LTS Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'
+        node-version: 'lts/*'
     - name: Install Angular CLI
       run: npm install -g @angular/cli
+    - name: Install Dependencies
+      run: npm install
     - name: Lint and Test
       run: |
-        npm install
         ng lint
         ng test --watch=false
