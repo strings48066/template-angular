@@ -12,7 +12,6 @@ jobs:
         node-version: '14'
     - name: Lint and Test
       run: |
-        cd angular-app
         npm install
         ng lint
         ng test --watch=false
