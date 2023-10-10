@@ -14,7 +14,7 @@ jobs:
       run: npm install -g @angular/cli
     - name: Install Dependencies
       run: npm install
-    - name: Lint and Test
-      run: |
-        ng lint
-        ng test --watch=false
+    - name: Lint
+      run: ng lint
+    - name: Test
+      run: ng test --watch=false --browsers=ChromeHeadless
